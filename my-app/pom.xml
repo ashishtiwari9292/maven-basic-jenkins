@@ -33,12 +33,14 @@
             <artifactId>checker-qual</artifactId>
             <version>1.9.4</version>
         </dependency>
-        <dependency>
-            <groupId>org.checkerframework</groupId>
-            <artifactId>checker-framework-jdk11</artifactId> <!-- Use checker-framework-jdk11 for JDK 11 -->
-            <version>1.9.4</version>
-        </dependency>
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>checker-framework-releases</id>
+            <url>https://checkerframework.org/repository/</url>
+        </repository>
+    </repositories>
 
     <build>
         <plugins>
